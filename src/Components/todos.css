@@ -1,0 +1,49 @@
+.collection div.collection-item{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px !important;
+    text-transform: capitalize;
+}
+div.collection-item:hover{
+  background-color: #d3d3d3;
+  transition: all 1s;
+  font-size: 25px !important;
+  color: white;
+}
+
+.formField {
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    flex: 1;
+}
+
+.edit{
+    margin-left: auto;
+    margin-right: 30px;
+}
+.container{
+  padding:30px;
+}
+@media(max-width: 700px){
+    .collection div.collection-item{
+        flex-direction: column;
+    }
+    .formField{
+        flex-direction: column;
+    }
+    .collection-item{
+        flex-direction: column;
+    }
+    .collection-item .edit{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center !important;
+    }
+    .edit{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    }
+}
